@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .page{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+        }
+        .centered{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .parent{
+            position: relative;
+            height: 70vh;
+            width: 80vw;
+            background-color: blue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .child1{
+            position: relative;
+            background-color: red;
+            height: 50vh;
+            width: 70%;
+        }
+        .child2{
+            position: relative;
+            background-color: black;
+            height: 30vh;
+            width: 50vw;
+        }
+        .child3{
+            position: relative;
+            background-color:antiquewhite;
+            height: 20vh;
+            width: 30vw;
+        }
+        .child4{
+            position: relative;
+            background-color:brown;
+            height: 10vh;
+            width: 20vw;
+    
+        }
+        h1:not(:last-child){
+            position: absolute;
+            top: 0rem;
+        }
+        
+        
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="parent centered">
+        <h1>parent</h1>
+        <div class="child1 centered">
+            <h1>child1</h1>
+            <div class="child2 centered">
+                <h1>child2</h1>
+                <div class="child3 centered">
+                    <h1>child3</h1>
+                    <div class="child4 centered">
+                        <h1 class="a">child4</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;700&family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- my css -->
+  <link rel="shortcut icon" href="/Page HTML/Image/Titlebar_icon.png">
+  <link rel="stylesheet" href="/Page HTML/css/PageHTML.css">
+  <title>HTML WebSite</title>
+</head>
+
+<body>
+  <button id="btnscrolltop">
+    
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.4 122.88"><title>Remonter vers le haut</title><path d="M24.94,67.88A14.66,14.66,0,0,1,4.38,47L47.83,4.21a14.66,14.66,0,0,1,20.56,0L111,46.15A14.66,14.66,0,0,1,90.46,67.06l-18-17.69-.29,59.17c-.1,19.28-29.42,19-29.33-.25L43.14,50,24.94,67.88Z"/></svg>
+</button>
+
+<section class="header" id="header">
+  <div class="overlay has-fade hide-for-desktop"></div>
+  <nav>
+
+    <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+
+    <div class="logo ">
+      <img class="html-logo" src="/Page HTML/Image/html logo.png">
+      <div class="text-logo">HTML.COM</div>
+    </div>
+    <div class="nav-links hide-for-mobile">
+        <ul>
+            <li><a href="/Page Principal/HTML/index.html">acceuil</a></li>
+            <li><a  href="./PageHTML.html">html</a></li>
+            <li><a href="/Page CSS/html/PageCSS.html">css</a></li>
+            <li><a href="/Page JS/html/PageJS.html">javaScript</a></li>
+            <li><a href="#footer">contact</a></li>
+        </ul>
+    </div>
+
+    <div class="header__menu has-fade hide-for-desktop">
+      <a href="/Page Principal/HTML/index.html">accueil</a>
+      <a href="./PageHTML.html">html</a>
+      <a href="/Page CSS/html/PageCSS.html">css</a>
+      <a href="/Page JS/html/PageJS.html">javascript</a>
+      <a href="#footer">contact</a>
+    </div>
+  </nav>
+  
+  <nav class="navbar">
+    <ul>
+      <li>
+        <a href="#editeur" class="dot" data-scroll="Editeur de Code HTML">
+          <span>Editeur de Code HTML</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#Balise" class="dot" data-scroll="Les Balises HTML">
+          <span>Les Balises HTML</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#Attributs" class="dot" data-scroll="Les Attributs HTML">
+          <span>Les Attributs HTML</span>
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <div class="flexedtext">
+    <div class="text-box">
+      <h1>C'est quoi HTML en informatique?</h1>
+      <p>L'HyperText Markup Language, HTML, désigne un type de langage informatique descriptif. Il s'agit plus précisément d'un format de données utilisé dans l'univers d'Internet pour la mise en forme des pages Web. Il permet, entre autres, d'écrire de l'hypertexte, mais aussi d'introduire des ressources multimédias dans un contenu.
+      Développé par le W3C (World Wide Web Consortium) et le WHATWG (Web Hypertext Application Technology Working Group), le format ou langage HTML est apparu dans les années 1990. Il a progressivement subi des modifications et propose depuis 2014 une version HTML5 plus aboutie.</p>
+    </div>
+
+    <div class="role">
+      <h1>Avantage de progammation HTML</h1>
+      <ul>
+        <li>Gratuit.</li>
+        <li>Facile à apprendre.</li>
+        <li>La base de tout langage Web.</li>
+        <li>simplification de modification du code.</li>
+        <li>Pris en charge par tous les navigateurs.</li>
+        <li>Peut être facilement intégré à plusieurs langage Web.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="ss ss-centered">
+      <div class="editeur-text">
+        <div class="left-side"><img src="/Page HTML/Image/pc img.png" alt=""></div>
+        <div class="right-side">
+          <h2 id="editeur">Editeurs de code HTML</h2>
+          <p>Un éditeur HTML est un logiciel soit accessible directement en ligne, soit à télécharger, qui aide le développeur à coder les différentes pages d'un site internet.
+          Généralement facile à utiliser, l'éditeur HTML ou éditeur web est une sorte de boîte à outils, qui permet de visualiser rapidement le rendu graphique d'un document.</p>
+
+          <div class="editeurs">
+            <ul class="editeur-left">
+              <h3>Editeur enligne</h3>
+              <li>HTMLed.it</li>
+              <li>HTML Online</li>
+              <li>HTML Code Editor</li>
+              <li>HTML Instant</li>
+            </ul>
+
+            <ul class="editeur-right">
+              <h3>Editeur a télécharger</h3>
+              <li>Visual Studio Code</li>
+              <li>Atom</li>
+              <li>Sublime Text</li>
+              <li>Notepad++</li>
+            </ul>
+          </div>
+          <h3>Quelles sont les fonctionnalités clés d'un éditeur HTML ?</h3>
+          <div class="editeur-fonctinality">
+            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M448,71.9c-17.3-13.4-41.5-9.3-54.1,9.1L214,344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8  c-15.6,15.5-16.4,41.6-1.7,58.1c0,0,120.4,133.6,137.7,147c17.3,13.4,41.5,9.3,54.1-9.1l206.3-301.7  C469.2,110.9,465.3,85.2,448,71.9z"/></svg>
+            <p>La saisie semi-automatique.</p>
+          </div>
+
+          <div class="editeur-fonctinality">
+            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M448,71.9c-17.3-13.4-41.5-9.3-54.1,9.1L214,344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8  c-15.6,15.5-16.4,41.6-1.7,58.1c0,0,120.4,133.6,137.7,147c17.3,13.4,41.5,9.3,54.1-9.1l206.3-301.7  C469.2,110.9,465.3,85.2,448,71.9z"/></svg>
+            <p>La correction de la syntaxe et de l'orthographe.</p>
+          </div>
+
+          <div class="editeur-fonctinality">
+            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M448,71.9c-17.3-13.4-41.5-9.3-54.1,9.1L214,344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8  c-15.6,15.5-16.4,41.6-1.7,58.1c0,0,120.4,133.6,137.7,147c17.3,13.4,41.5,9.3,54.1-9.1l206.3-301.7  C469.2,110.9,465.3,85.2,448,71.9z"/></svg>
+            <p>La détection d'erreurs.</p>
+          </div>
+
+          <div class="editeur-fonctinality">
+            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M448,71.9c-17.3-13.4-41.5-9.3-54.1,9.1L214,344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8  c-15.6,15.5-16.4,41.6-1.7,58.1c0,0,120.4,133.6,137.7,147c17.3,13.4,41.5,9.3,54.1-9.1l206.3-301.7  C469.2,110.9,465.3,85.2,448,71.9z"/></svg>
+            <p>Visualiser rapidement le rendu graphique d'un document HTML.</p>
+          </div>
+          </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="parallaxx"></div>
+     
+
+<div class="ss">
+  <h1 class="blockcentered" id="Balise">Balises HTML</h1>
+  <p class="blockcentered">Un élément HTML est défini par une balise de début, du contenu et une balise de fin.</p>
+  <p class="blockcentered">&ltBalise&gt Le contenu va ici...&lt/Balise&gt</p>
+  <p class="blockcentered">Les éléments HTML sans contenu sont appelés éléments vides.</p>
+  <p class="blockcentered">La balise &ltbr&gt définit un saut de ligne et elle est un élément vide sans balise fermante</p>
+  
+  <main class="parent-grid">  
+    <article class="child grid-col-span-2 bg-primary-400 text-neutral-100">
+      <p>Les balises basiques</p>
+      <p><b style="font-size: 0.9rem;">&lt!Doctype HTML&gt</b>
+      Definit le type de document en html.</p>
+      <p><b style="font-size: 0.9rem;">&lthead&gt</b>
+      Contient des métadonnées/informations pour le document</p>
+      <p><b style="font-size: 0.9rem;">&ltmeta&gt</b>
+      Définit les métadonnées d'un document HTML</p>
+      <p><b style="font-size: 0.9rem;">&lttitle&gt</b>
+      Définit un titre pour le document</p>
+      <p><b style="font-size: 0.9rem;">&ltbody&gt</b>
+      Définit le corps du document</p>
+      <p><b style="font-size: 0.9rem;">&lth1&gt vers &lth6&gt</b>
+      Définit les titres HTML.</p>
+      <p><b style="font-size: 0.9rem;">&ltp&gt</b>
+      Définit un paragraphe.</p>
+      <!-- <p><b style="font-size: 0.9rem;">&ltbr&gt</b>
+      Insère un saut de ligne.</p> -->
+      <p><b style="font-size: 0.9rem;">&ltfooter&gt</b>
+      Définit un pied de page pour un document ou une section.</p>
+      <p><b style="font-size: 0.9rem;">&lt!-- --&gt</b>
+        Définit un commentaire</p>
+    </article>
+
+    <article class="child bg-secondary-400 text-neutral-100">
+      <p>Les balises d'image</p>
+      <p><b style="font-size: 0.9rem;">&ltimg&gt</b>
+      Définit une image</p>
+      <p><b style="font-size: 0.9rem;">&ltsvg&gt</b>
+      Définit un conteneur pour les graphiques SVG.</p>
+      <p><b style="font-size: 0.9rem;">&ltmap&gt</b>
+      Définit une image cliquable côté client.</p>
+      <p><b style="font-size: 0.9rem;">&ltarea&gt</b>
+      Définit une zone à l'intérieur d'une image cliquable.</p>
+      <p><b style="font-size: 0.9rem;">&ltfigure&gt</b>
+      Spécifie le contenu autonome.</p>
+      <p><b style="font-size: 0.9rem;">&ltpicture&gt</b>
+      Définit un conteneur pour plusieurs ressources d'image</p>
+    </article>
+
+    <article class="child bg-neutral-100 text-secondary-500">
+      <p>Les balises de lien</p>
+      <p><b style="font-size: 0.9rem;">&lta&gt</b>
+      Définit un lien hypertexte.</p>
+      <p><b style="font-size: 0.9rem;">&ltlink&gt</b>
+      Définit la relation entre un document et une ressource externe.</p>
+      <p><b style="font-size: 0.9rem;">&ltnav&gt</b>
+      Définit les liens de navigation.</p>
+    </article>
+
+    <article class="child grid-col-span-2 bg-secondary-500 text-neutral-100">
+      <p>Les balises de tableau</p>
+      <p><b style="font-size: 0.9rem;">&lttable&gt</b>
+      Définit un tableau.</p>
+      <p><b style="font-size: 0.9rem;">&ltth&gt</b>
+      Définit une cellule d'en-tête dans un tableau.</p>
+      <p><b style="font-size: 0.9rem;">&lttr&gt</b>
+      Définit une ligne dans un tableau.</p>
+      <p><b style="font-size: 0.9rem;">&lttd&gt</b>
+      Définit une cellule dans un tableau.</p>
+      <p><b style="font-size: 0.9rem;">&ltthead&gt</b>
+      Regroupe le contenu de l'en-tête dans un tableau</p>
+    </article>
+
+    <article class="child bg-neutral-100 text-secondary-500">
+      <p>Les balises de listes et formulaires de saisie</p>
+      <p><b style="font-size: 0.9rem;">&ltul&gt</b>
+      Définit une liste non ordonnée.</p>
+      <p><b style="font-size: 0.9rem;">&ltol&gt</b>
+      Définit une liste ordonnée.</p>
+      <p><b style="font-size: 0.9rem;">&ltli&gt</b>
+      Définit un élément de liste.</p>
+      <p><b style="font-size: 0.9rem;">&ltdl&gt</b>
+      Définit une liste de description.</p>
+      <p><b style="font-size: 0.9rem;">&ltdt&gt</b>
+      Définit un terme/nom dans une liste de description.</p> 
+      <p><b style="font-size: 0.9rem;">&ltdd&gt</b>
+      Définit une description d'un terme/nom dans une liste de description.</p> 
+      <p><b style="font-size: 0.9rem;">&ltform&gt</b>
+      Définit un formulaire HTML pour la saisie de l'utilisateur.</p>
+      <p><b style="font-size: 0.9rem;">&ltinput&gt</b>
+      Définit un contrôle d'entrée.</p>
+      <p><b style="font-size: 0.9rem;">&ltlabel&gt</b>
+      Définit une étiquette pour un élément &ltinput&gt.</p>
+      <p><b style="font-size: 0.9rem;">&lttextarea&gt</b>
+      Définit un champ de saisie multiligne (zone de texte).</p>
+      <p><b style="font-size: 0.9rem;">&ltdatatlist&gt</b>
+      Spécifie une liste d'options prédéfinies pour les contrôles d'entrée.</p>
+      <p><b style="font-size: 0.9rem;">&ltbutton&gt</b>
+      Définit un bouton cliquable.</p>
+      
+    </article>
+  </main>
+</div>
+
+<div class="ss ss-centered">
+  <div class="editeur-text a">
+    <div class="right-side">
+      <h2 id="Attributs">Attributs HTML</h2>
+      <p>Les attributs HTML sont utilisés dans la balise d'ouverture. Ils fournissent des informations supplémentaires sur les éléments HTML. Un attribut modifie la fonctionnalité par défaut d'un élément ou offre des fonctionnalités à des types d'éléments spécifiques qui ne peuvent pas fonctionner correctement sans eux. L'attribut a un nom, suivi du signe égal (=) et d'une valeur placée entre guillemets (" ").</p>
+      <p>&ltBalise attribut="Valeur"&gt Le contenu va ici...&lt/Balise&gt</p>
+      <table>
+        <tr class="tablehead">
+          <th>Balise</th>
+          <th>Attribut</th>
+          <th>Exemple</th>
+        </tr>
+
+        <tr>
+          <td>&ltmeta&gt</td>
+          <td>charset, name, content</td>
+          <td>
+            &ltmeta charset="UTF-8"&gt<br>
+            &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt</td>
+          
+
+        <tr>
+          <td>&ltimg&gt</td>
+          <td>src, width, height, alt</td>
+          <td>&ltimg width="50px" height="80px" src="/Image/HTML.png" alt="image HTML"&gt</td> 
+          
+
+        </tr>
+          <tr>  
+          <td>&lta&gt</td>
+          <td>href, target, title</td>
+          <td>&lta href"www.google.com" title="Google" target="_blank"&gt&lta&gt</td>  
+          
+        </tr>
+
+        <tr>
+          <td>&ltinput&gt</td>
+          <td>type, name, value, placeholder</td>
+          <td>&ltinput type="text" name="Nom" placeholder="Nom d'utilisateur"&gt</td>
+        </tr>
+
+        <tr>
+          <td>&ltp&gt</td>
+          <td>Style</td>
+          <td>&ltp style="color:red; font-size:10px;"&gt&ltp&gt</td>
+        </tr>
+      </table>
+      
+    </div>
+      <div class="left-side"><img src="/Page HTML/Image/Laptop_img.png" alt=""></div>
+  </div>
+</div>
+
+
+  <footer class="ss-grad" id="footer">
+    <div class="container">
+        <div class="signin-up">
+            <form action="" class="signin-form">
+                <h2 class="title">Se connecter</h2>
+                <div class="input-field">
+                    <img src="/Page HTML/Image/profile-user.png" class="img">
+                    <input type="text" placeholder="Nom d'utilisateur">
+                </div>
+
+                <div class="input-field">
+                    <img src="/Page HTML/Image/padlock.png" class="img">
+                    <input type="password" placeholder="Mot de passe">
+                </div>
+                <input type="submit" value="Se connecter" class="btn">
+                <p class="social-text">Ou se connecter avec votre platform social</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon"><?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><title>Facebook</title><path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"/></svg>
+                    </a>
+
+                    <a href="#" class="social-icon" title="google"><?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><title>google</title><path d="M 15.003906 3 C 8.3749062 3 3 8.373 3 15 C 3 21.627 8.3749062 27 15.003906 27 C 25.013906 27 27.269078 17.707 26.330078 13 L 25 13 L 22.732422 13 L 15 13 L 15 17 L 22.738281 17 C 21.848702 20.448251 18.725955 23 15 23 C 10.582 23 7 19.418 7 15 C 7 10.582 10.582 7 15 7 C 17.009 7 18.839141 7.74575 20.244141 8.96875 L 23.085938 6.1289062 C 20.951937 4.1849063 18.116906 3 15.003906 3 z"/></svg>
+                    </a>
+
+                    <a href="#" class="social-icon" title="Linkedin"><?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><title>Linkedin</title><path d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"/></svg>
+                    </a>
+
+                    <a href="#" class="social-icon" >
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"/></svg>
+                    </a>
+                </div>
+                <p class="account-text">Vous n'avez pas un compte?<a href="#footer" id="sign-up-btn2">S'inscrire</a></p>
+            </form>
+
+            <form action="" class="signup-form">
+                <h2 class="title">S'inscrire</h2>
+                <div class="input-field">
+                    <img src="/Page HTML/Image/profile-user.png" class="img">
+                    <input type="text" placeholder="Nom d'utilisateur">
+                </div>
+
+                <div class="input-field">
+                    <img src="/Page HTML/Image/email.png" class="img">
+                    <input type="text" placeholder="Email">
+                </div>
+
+                <div class="input-field">
+                    <img src="/Page HTML/Image/padlock.png" class="img">
+                    <input type="password" placeholder="Mot de passe">
+                </div>
+                <input type="submit" value="S'inscrire" class="btn">
+                <p class="social-text">Ou se connecter avec votre platform social</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon"><?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><title>Facebook</title><path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"/></svg>
+                    </a>
+
+                    <a href="#" class="social-icon" title="google"><?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><title>google</title><path d="M 15.003906 3 C 8.3749062 3 3 8.373 3 15 C 3 21.627 8.3749062 27 15.003906 27 C 25.013906 27 27.269078 17.707 26.330078 13 L 25 13 L 22.732422 13 L 15 13 L 15 17 L 22.738281 17 C 21.848702 20.448251 18.725955 23 15 23 C 10.582 23 7 19.418 7 15 C 7 10.582 10.582 7 15 7 C 17.009 7 18.839141 7.74575 20.244141 8.96875 L 23.085938 6.1289062 C 20.951937 4.1849063 18.116906 3 15.003906 3 z"/></svg>
+                    </a>
+
+                    <a href="#" class="social-icon" title="Linkedin"><?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><title>Linkedin</title><path d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"/></svg>
+                    </a>
+
+                    <a href="#" class="social-icon" >
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"/></svg>
+                    </a>
+                </div>
+                <p class="account-text">Vous avez déjà un compte?<a href="#footer" id="sign-in-btn2">Se connecter</a></p>
+            </form>
+        </div>
+            <div class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <h3>Vous avez déjà un compte?</h3>
+                        <p>Meilleurs cour de developpement HTML, des cours Certifié et bien évaluer,exceller dans la vie professionnelle...</p>
+                        <button class="btn" id="sign-in-btn">Se connecter</button>
+                    </div>
+                </div>
+
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>Vous n'avez pas un compte?</h3>
+                        <p>Meilleurs cour de developpement HTML, des cours Certifié et bien évaluer,exceller dans la vie professionnelle...</p>
+                        <button class="btn" id="sign-up-btn">S'inscrire</button>
+                    </div>
+                </div>
+            </div> 
+    </div>
+  </footer>
+  <script src="/Page HTML/js/form.js"></script>
+  <script src="/Page HTML/js/Scrolltop.js"></script>
+  <script src="/Page HTML/js/scroll parallax effect.js"></script>
+  <script src="/Page HTML/js/Hamburger menu.js"></script>
+
+</body>
+
+</html>
